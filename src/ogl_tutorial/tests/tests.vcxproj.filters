@@ -5,10 +5,50 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{d09335ac-34bb-4d8f-bf68-1d0448ac1419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geometry">
+      <UniqueIdentifier>{78ba9c64-6628-4084-93a7-4b055f5513e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\input">
+      <UniqueIdentifier>{c2829602-fd12-48bd-91e3-682731bf35d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tests.cpp">
+    <ClCompile Include="shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cube.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IGeometry.hpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="cube.hpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.hpp">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\simple_fs.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\simple_vs.shader">
+      <Filter>shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -143,7 +143,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="tests.cpp" />
+    <ClCompile Include="cube.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cube.hpp" />
+    <ClInclude Include="IGeometry.hpp" />
+    <ClInclude Include="Input.hpp" />
+    <ClInclude Include="shader.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\simple_fs.shader" />
+    <None Include="shaders\simple_vs.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
